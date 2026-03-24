@@ -1,0 +1,5 @@
+parent_name,child_name,ownership_pct,date_start,date_end
+Company A,Company B,100,01/01/2020,
+Company A,Company C,100,01/01/2020,
+Company B,Company D,60,06/01/2021,
+Company B,Company E,40,06/01/2021,
