@@ -6,7 +6,21 @@ Free to download and open source. No account needed. No data upload. Just open t
 
 > The downloadable version is free and open source under MIT license. A hosted version with additional features is planned for the future.
 
-![OwnershipChart Screenshot](screenshot.png)
+
+---
+
+## Screenshots
+
+![OTree Welcome Screen]
+
+![OTree Chart View]
+
+![OTree Tooltip]
+
+![ownership_template]
+
+![companies_template]
+
 
 ---
 
@@ -17,13 +31,13 @@ Free to download and open source. No account needed. No data upload. Just open t
 - Accountants and auditors mapping group entities
 - Compliance officers visualizing beneficial ownership
 - Private equity and family office administrators
-- Anyone who has ever tried to draw a corporate structure in PowerPoint and given up
+- Anyone who has ever tried to draw a corporate structure in Excel or PowerPoint and eventually given up
 
 ---
 
 ## What it does
 
-- Draws a **fishbone-style ownership chart** — parent companies on the left, subsidiaries branching right and downward
+- Draws a **fishbone-style or curved line-style ownership chart** — parent companies on the left, subsidiaries branching right and downward
 - Shows **ownership % on every line**
 - Calculates **indirect / effective holding %** automatically (e.g. A owns 60% of B, B owns 50% of C → A effectively holds 30% of C)
 - Handles **multiple parents** — companies owned by more than one shareholder are clearly shown with separate lines
@@ -66,7 +80,7 @@ Open `ownership_template.csv` in Excel and fill in your ownership relationships:
 | `date_start` | When this relationship started (MM/DD/YYYY) | 01/15/2010 |
 | `date_end` | When it ended — leave blank if still active | 12/31/2020 |
 
-Optionally fill in `companies_template.csv` with company attributes:
+Optionally (but very powerful way to enrich the chart) fill in `companies_template.csv` with company attributes:
 
 | Column | Description |
 |---|---|
@@ -170,8 +184,14 @@ Yes — share the HTML file and your CSV templates. Each person loads their own 
 - [ ] Multi-language support
 - [ ] Color coding by country or entity type
 - [ ] PDF/PNG export of the chart
-- [ ] Hosted web version with team accounts *(planned as paid plan)*
+- [ ] Password protection for sensitive charts
 - [ ] Mobile responsive layout
+
+---
+
+## Disclaimer
+
+OTree is provided for informational and visualization purposes only. It does not constitute legal, financial or compliance advice. Users are solely responsible for the accuracy and completeness of the data they enter. The developer makes no warranties, express or implied, regarding the accuracy, completeness or fitness for purpose of the tool or its output. Use of OTree does not create any professional advisory relationship between the user and the developer.
 
 ---
 
@@ -179,10 +199,6 @@ Yes — share the HTML file and your CSV templates. Each person loads their own 
 
 Feedback, bug reports and feature requests are welcome. Open an issue or submit a pull request.
 
-If this tool saves you time, consider supporting the project:
-👉 [Support on Gumroad](#) ← link to be added
-
-**Coming soon:** A hosted version with cloud storage, team accounts and additional features.
 
 ---
 
@@ -190,10 +206,11 @@ If this tool saves you time, consider supporting the project:
 
 MIT License — free to use, modify and distribute. Attribution appreciated.
 
+Copyright 2025 OTree
 ---
 
 *Built with HTML, CSS and vanilla JavaScript. No frameworks. No dependencies. No nonsense.*
-
+*The downloadable version is free  and open source. Always. Future hosted features will be offered as paid plans.*
 *The downloadable version is free and open source. Always. Future hosted features will be offered as paid plans.*
 
 *Feature comparison based on publicly available information as of 2025. Subject to change.*
