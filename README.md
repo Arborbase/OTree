@@ -206,7 +206,7 @@ Feedback, bug reports and feature requests are welcome. Open an issue or submit 
 
 MIT License — free to use, modify and distribute. Attribution appreciated.
 
-Copyright 2025 OTree
+Copyright 2026 Labsky Consulting LLC
 ---
 
 *Built with HTML, CSS and vanilla JavaScript. No frameworks. No dependencies. No nonsense.*
