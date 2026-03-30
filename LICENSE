@@ -1,21 +1,35 @@
-MIT License
+OTree — Dual License
+Copyright 2025 Labsky Consulting LLC
+Operating as ArborBase
+arborbase.io | hello@arborbase.io
 
-Copyright (c) 2026 Labsky Consulting LLC
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+OPEN SOURCE AND NON-COMMERCIAL USE
+GNU General Public License v3.0
+Free for personal, academic, non-profit,
+and open source project use.
+See LICENSE-GPL.txt for full terms.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+COMMERCIAL USE
+ArborBase Commercial License required for:
+- Use in any for-profit business or organization
+- Use by law firms, accounting firms, compliance teams
+- Embedding OTree in software you sell or license
+- White-label or rebranded use
+
+See LICENSE-COMMERCIAL.txt for full terms.
+Contact: hello@arborbase.io
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LICENSE HISTORY
+v1.0 — MIT License (permanent, irrevocable)
+v1.1 — MIT License (permanent, irrevocable)
+v3.0 and all future versions — Dual License
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+github.com/Arborbase/OTree
