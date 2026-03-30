@@ -1,6 +1,6 @@
 # OTree — Corporate Ownership Structure Visualization
 
-**by [ArborBase](https://arborbase.io) — Built by Labsky Consulting LLC, New York**
+**by ArborBase — Built by Labsky Consulting LLC, New York**
 
 > Visualize complex corporate ownership structures in minutes — not hours.
 > Free to download. Works completely offline. Your data never leaves your computer.
@@ -42,11 +42,13 @@ No account. No upload. No internet required after download.
 
 ## Key Features
 
+*Features listed below are implemented and will be available in the upcoming release.*
+
 - **Automatic chart generation** — load a CSV and the chart draws itself
 - **Effective % calculation** — calculates indirect ownership across all levels automatically
 - **Time-aware** — set any as-of date to see the ownership structure at that historical point
 - **Multiple parent handling** — companies with more than one owner shown clearly
-- **8 positioning presets** — Fishbone, Top-down, Compact, Spacious, Wide, Tall, Centered, Smart Hybrid
+- **Positioning presets** — multiple layout options to suit your working style
 - **Save layouts** — save and switch between named manual arrangements
 - **Save snapshot** — self-contained HTML with all data embedded, reopens without CSV
 - **Minimap navigation** — thumbnail overview with click-to-jump for large structures
@@ -60,13 +62,13 @@ No account. No upload. No internet required after download.
 
 ## How to Use
 
-### Step 1 — Download
+*OTree is coming soon. Contact [hello@arborbase.io](mailto:hello@arborbase.io) to join the early access list or watch this repository to be notified on release.*
 
-OTree v3.0 is coming soon. Watch this repository or contact [hello@arborbase.io](mailto:hello@arborbase.io) to be notified on release.
+Once released, the workflow is simple:
 
-### Step 2 — Prepare your data
+### Step 1 — Prepare your data
 
-Download the CSV templates and fill in your ownership data:
+Download the CSV templates from this repository and fill in your ownership data:
 
 **ownership_template.csv**
 
@@ -78,7 +80,7 @@ Download the CSV templates and fill in your ownership data:
 | date_start | When this relationship started | 1/15/2010 |
 | date_end | When it ended — leave blank if still active | 12/31/2020 |
 
-**companies_template.csv** (optional)
+**companies_template.csv** (optional — adds company attributes to tooltips)
 
 | Column | Description |
 |---|---|
@@ -89,14 +91,14 @@ Download the CSV templates and fill in your ownership data:
 | company_type | Listed / Private / Partnership / Trust etc. |
 | notes | Any additional notes |
 
-### Step 3 — Open and load
+### Step 2 — Open and load
 
 1. Open `OTree.html` in Chrome, Edge, Firefox or Safari
 2. Click **Load Ownership CSV**
 3. Optionally click **Load Company Data**
 4. Set the **as-of date** to view any historical structure
 
-### Step 4 — Navigate
+### Step 3 — Navigate
 
 | Action | How |
 |---|---|
@@ -117,13 +119,13 @@ Download the CSV templates and fill in your ownership data:
 - Separator: tab or comma — auto-detected
 - Company names with commas: wrap in double quotes e.g. `"Smith, Jones & Co"`
 - Leave date_end blank for currently active relationships
-- Company names are case-sensitive
+- Company names are case-sensitive — must match exactly between both CSV files
 
 ---
 
 ## Privacy
 
-OTree runs entirely in your browser. Your CSV files are read locally and never sent anywhere. No server, no cloud storage, no analytics, no account required. The source code is fully open and auditable.
+OTree runs entirely in your browser. Your CSV files are read locally and never sent anywhere. No server, no cloud storage, no analytics, no account required. The source code is fully open and auditable. You can verify exactly what the tool does before using it with sensitive client data.
 
 ---
 
@@ -168,22 +170,8 @@ Yes — 30 day free evaluation. Contact hello@arborbase.io.
 
 ## Roadmap
 
-- [x] CSV loading with tab/comma auto-detection
-- [x] Automatic chart generation
-- [x] Effective indirect % calculation
-- [x] Time-aware as-of date filtering
-- [x] Multiple parent handling
-- [x] Minimap navigation
-- [x] Positioning presets
-- [x] Save and switch named layouts
-- [x] Snapshot export with embedded data
-- [ ] Ribbon navigation (v3.0)
-- [ ] Keyboard shortcuts (v3.0)
-- [ ] Date slider with animated timeline (v3.0)
-- [ ] Subset tree view — focus on any company as root (v3.0)
-- [ ] Style presets by country and level (v3.0)
-- [ ] AI analytics — natural language queries (v3.0)
-- [ ] Mobile optimised layout (v3.0)
+- [x] All core features implemented
+- [ ] Additional features coming in next release
 - [ ] ETree — employee org chart tool (planned)
 
 ---
@@ -200,5 +188,7 @@ OTree is provided for informational and visualization purposes only. It does not
 New York, NY
 [hello@arborbase.io](mailto:hello@arborbase.io)
 [github.com/Arborbase/OTree](https://github.com/Arborbase/OTree)
+
+Copyright 2026 Labsky Consulting LLC
 
 *Feature comparison based on publicly available information as of 2026. Subject to change.*
