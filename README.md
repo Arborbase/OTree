@@ -1,217 +1,204 @@
-# OwnershipChart
+# OTree — Corporate Ownership Structure Visualization
 
-**An offline, privacy-first tool for visualizing complex corporate ownership structures.**
+**by [ArborBase](https://arborbase.io) — Built by Labsky Consulting LLC, New York**
 
-Free to download and open source. No account needed. No data upload. Just open the file in your browser and load your data.
-
-> The downloadable version is free and open source under MIT license. A hosted version with additional features is planned for the future.
-
+> Visualize complex corporate ownership structures in minutes — not hours.
+> Free to download. Works completely offline. Your data never leaves your computer.
 
 ---
 
-## Screenshots
+## What is OTree?
 
-![OTree Welcome Screen]
+OTree is a privacy-first, offline tool for visualizing corporate ownership structures. Load your ownership data from a CSV file and OTree automatically draws the full chart, calculates indirect ownership percentages, and lets you explore the structure interactively.
 
-![OTree Chart View]
-
-![OTree Tooltip]
-
-![ownership_template]
-
-![companies_template]
-
+No account. No upload. No internet required after download.
 
 ---
 
-## Who is this for?
+## Who is it for?
 
-- Corporate lawyers managing holding structures
-- Company secretaries tracking subsidiaries
-- Accountants and auditors mapping group entities
-- Compliance officers visualizing beneficial ownership
-- Private equity and family office administrators
-- Anyone who has ever tried to draw a corporate structure in Excel or PowerPoint and eventually given up
-
----
-
-## What it does
-
-- Draws a **fishbone-style or curved line-style ownership chart** — parent companies on the left, subsidiaries branching right and downward
-- Shows **ownership % on every line**
-- Calculates **indirect / effective holding %** automatically (e.g. A owns 60% of B, B owns 50% of C → A effectively holds 30% of C)
-- Handles **multiple parents** — companies owned by more than one shareholder are clearly shown with separate lines
-- **Time-aware** — set an as-of date and the chart shows only the ownership structure that was active on that date
-- Works with **300+ companies** — zoom, pan, drag nodes, collapse and expand branches
+- **Corporate lawyers** — M&A due diligence, group structure documentation
+- **Compliance and AML officers** — beneficial ownership mapping, EU AML regulation
+- **Company secretaries** — maintaining statutory records and group charts
+- **Private equity analysts** — portfolio company structuring
+- **Family office administrators** — wealth structure management
+- **Accountants and auditors** — group structure audit and reporting
 
 ---
 
-## Why it is different
+## Why OTree is different
 
-| Feature | OwnershipChart | Visio / PowerPoint | Lucidchart | Cap table tools |
-|---|---|---|---|---|
-| Calculates effective % | ✅ | ❌ | ❌ | Partial |
-| Time-aware (as-of date) | ✅ | ❌ | ❌ | ❌ |
-| Data stays on your computer | ✅ | ✅ | ❌ | ❌ |
-| Works offline | ✅ | ✅ | ❌ | ❌ |
-| No account needed | ✅ | ✅ | ❌ | ❌ |
-| Free to download, no account | ✅ | ❌ | ❌ | ❌ |
-| Handles 300+ entities | ✅ | Hard | ✅ | ✅ |
-
-**Privacy is the core design principle.** Your ownership data never leaves your computer. There is no server, no database, no analytics. The tool runs entirely in your browser.
-
-*The downloadable open source version is free. Future hosted and team features will be available as paid plans.*
+| Feature | OTree | Visio / PowerPoint | Lucidchart |
+|---|---|---|---|
+| Calculates effective indirect % | ✅ Automatic | ❌ Manual | ❌ Manual |
+| Time-aware (as-of date) | ✅ Yes | ❌ No | ❌ No |
+| Works completely offline | ✅ Yes | ✅ Yes | ❌ No |
+| Data stays on your computer | ✅ Always | ✅ Yes | ❌ Uploaded |
+| Handles multiple parents | ✅ Yes | ❌ Limited | ❌ Limited |
+| Free to download | ✅ Yes | ❌ Paid | ❌ Paid |
+| No account needed | ✅ Yes | ❌ Required | ❌ Required |
 
 ---
 
-## How to use
+## Key Features
+
+- **Automatic chart generation** — load a CSV and the chart draws itself
+- **Effective % calculation** — calculates indirect ownership across all levels automatically
+- **Time-aware** — set any as-of date to see the ownership structure at that historical point
+- **Multiple parent handling** — companies with more than one owner shown clearly
+- **8 positioning presets** — Fishbone, Top-down, Compact, Spacious, Wide, Tall, Centered, Smart Hybrid
+- **Save layouts** — save and switch between named manual arrangements
+- **Save snapshot** — self-contained HTML with all data embedded, reopens without CSV
+- **Minimap navigation** — thumbnail overview with click-to-jump for large structures
+- **Search** — find and jump to any company instantly
+- **Export** — PNG, PDF, and effective holdings CSV
+- **Collapse and expand** — hide branches to focus on relevant parts
+- **Right-click context menu** — path from root, all descendants, effective holdings
+- **Privacy-first** — single HTML file, zero external dependencies, fully offline
+
+---
+
+## How to Use
 
 ### Step 1 — Download
-Download `ownership_chart.html`, `ownership_template.csv` and `companies_template.csv` from this repository.
+
+OTree v3.0 is coming soon. Watch this repository or contact [hello@arborbase.io](mailto:hello@arborbase.io) to be notified on release.
 
 ### Step 2 — Prepare your data
-Open `ownership_template.csv` in Excel and fill in your ownership relationships:
+
+Download the CSV templates and fill in your ownership data:
+
+**ownership_template.csv**
 
 | Column | Description | Example |
 |---|---|---|
-| `parent_name` | The owning company | Alpha Holdings |
-| `child_name` | The owned company | Beta Corp |
-| `ownership_pct` | Ownership percentage | 60 |
-| `date_start` | When this relationship started (MM/DD/YYYY) | 01/15/2010 |
-| `date_end` | When it ended — leave blank if still active | 12/31/2020 |
+| parent_name | The owning company | Alpha Holdings |
+| child_name | The owned company | Beta Corp |
+| ownership_pct | Ownership percentage (number only) | 60 |
+| date_start | When this relationship started | 1/15/2010 |
+| date_end | When it ended — leave blank if still active | 12/31/2020 |
 
-Optionally (but very powerful way to enrich the chart) fill in `companies_template.csv` with company attributes:
+**companies_template.csv** (optional)
 
 | Column | Description |
 |---|---|
-| `company_name` | Must match exactly the names in your ownership CSV |
-| `dba_name` | Trading name or abbreviation |
-| `country` | Country of incorporation |
-| `currency` | Functional currency |
-| `company_type` | Listed / Private / REIT / Startup etc. |
-| `notes` | Any other notes |
+| company_name | Must match exactly with ownership CSV |
+| dba_name | Trading name or abbreviation |
+| country | Country of incorporation |
+| currency | Functional currency |
+| company_type | Listed / Private / Partnership / Trust etc. |
+| notes | Any additional notes |
 
 ### Step 3 — Open and load
-1. Open `ownership_chart.html` in Chrome, Edge, Firefox or Safari
-2. Click **Load Ownership CSV** and select your file
-3. Click **Load Company Data** (optional) for attributes
-4. Set the **as-of date** to see the structure on any date
+
+1. Open `OTree.html` in Chrome, Edge, Firefox or Safari
+2. Click **Load Ownership CSV**
+3. Optionally click **Load Company Data**
+4. Set the **as-of date** to view any historical structure
 
 ### Step 4 — Navigate
+
 | Action | How |
 |---|---|
-| Zoom in/out | Scroll wheel |
-| Pan the chart | Click and drag the background |
-| Move a company box | Click and drag the box |
-| Collapse/expand branch | Click the +/− button on the box |
-| Highlight connections | Click a box |
-| Full details | Right-click a box |
+| Zoom | Scroll wheel |
+| Pan | Click and drag background |
+| Move a company | Click and drag the box |
+| Collapse/expand | Click the +/− button |
+| Highlight | Left-click a company box |
+| Full details | Hover over any box |
+| More options | Right-click any box |
 | Search | Type in the search box |
-| Export effective % | Click Export % button |
 
 ---
 
-## Chart controls
+## CSV Format Notes
 
-| Control | What it does |
-|---|---|
-| **As-of date** | Filter relationships to a specific date |
-| **Search** | Find and jump to any company |
-| **Line style** | Switch between curved and fishbone lines |
-| **Parent gap** | Adjust spacing between multiple owner lines (S/M/L) |
-| **Lock layout** | Freeze positions so date changes do not move your layout |
-| **Auto-spread** | Reset all positions to auto-layout |
-| **Export %** | Download effective holdings as CSV — from highlighted company or root |
-| **Collapse all / Expand all** | Show or hide all branches at once |
+- Dates accept M/D/YYYY, MM/DD/YYYY or YYYY-MM-DD
+- Separator: tab or comma — auto-detected
+- Company names with commas: wrap in double quotes e.g. `"Smith, Jones & Co"`
+- Leave date_end blank for currently active relationships
+- Company names are case-sensitive
 
 ---
 
-## Data format notes
+## Privacy
 
-- Dates must be in **MM/DD/YYYY** format
-- Ownership % should be a number without the % sign (e.g. `60` not `60%`)
-- Leave `date_end` blank for currently active relationships
-- Company names are case-sensitive and must match exactly between the two CSV files
-- One row per ownership relationship — if a company has two parents, it has two rows
-
----
-
-## Example
-
-A simple three-level structure:
-
-```
-ownership_template.csv
-
-parent_name,child_name,ownership_pct,date_start,date_end
-Global Holdings,Asia Corp,100,01/01/2010,
-Global Holdings,Western Corp,100,01/01/2012,
-Asia Corp,Trading Ltd,75,06/01/2015,
-Asia Corp,Property Ltd,100,06/01/2015,
-Western Corp,Energy Inc,60,03/01/2016,
-Trading Ltd,Logistics Co,51,01/01/2018,12/31/2022
-```
-
----
-
-## Frequently asked questions
-
-**Is my data safe?**
-Yes. The tool runs entirely in your browser. Your CSV files are read locally and never sent anywhere. There is no server, no cloud storage, no analytics tracking.
-
-**Does it work without internet?**
-Yes — completely offline once downloaded. No external libraries are loaded.
-
-**How many companies can it handle?**
-Tested with 300+ companies. Performance depends on your computer but should be smooth up to 500+ entities.
-
-**Can I add more company attributes beyond the 5 default columns?**
-Yes — add any column you want to the companies CSV. The tooltip will display all columns automatically.
-
-**What browsers are supported?**
-Chrome, Edge, Firefox and Safari. Internet Explorer is not supported.
-
-**Is OTree free?**
-The downloadable open source version is free and will remain open source under MIT license. A hosted version with team features and cloud storage is planned as a paid product in the future.
-
-**Can I share this with my team?**
-Yes — share the HTML file and your CSV templates. Each person loads their own data. Nothing is shared between users unless you share the CSV files directly.
-
----
-
-## Roadmap
-
-- [ ] Multi-language support
-- [ ] Color coding by country or entity type
-- [ ] PDF/PNG export of the chart
-- [ ] Password protection for sensitive charts
-- [ ] Mobile responsive layout
-
----
-
-## Disclaimer
-
-OTree is provided for informational and visualization purposes only. It does not constitute legal, financial or compliance advice. Users are solely responsible for the accuracy and completeness of the data they enter. The developer makes no warranties, express or implied, regarding the accuracy, completeness or fitness for purpose of the tool or its output. Use of OTree does not create any professional advisory relationship between the user and the developer.
-
----
-
-## Contributing
-
-Feedback, bug reports and feature requests are welcome. Open an issue or submit a pull request.
-
+OTree runs entirely in your browser. Your CSV files are read locally and never sent anywhere. No server, no cloud storage, no analytics, no account required. The source code is fully open and auditable.
 
 ---
 
 ## License
 
-MIT License — free to use, modify and distribute. Attribution appreciated.
+OTree uses a dual license from v3.0 onwards:
 
-Copyright 2026 Labsky Consulting LLC
+**Open source and non-commercial use — GPL v3**
+Free for personal, academic, non-profit and open source use.
+See [LICENSE-GPL.txt](LICENSE-GPL.txt) for full terms.
+
+**Commercial use — ArborBase Commercial License**
+Required for use in law firms, accounting firms, compliance teams, or any for-profit organization. Also required for embedding OTree in software you sell or license to others.
+See [LICENSE-COMMERCIAL.txt](LICENSE-COMMERCIAL.txt) for full terms.
+Contact [hello@arborbase.io](mailto:hello@arborbase.io) for commercial licensing.
+
+### License History
+
+| Version | License | Status |
+|---|---|---|
+| v1.0 | MIT — permanent and irrevocable | No longer distributed |
+| v1.1 | MIT — permanent and irrevocable | No longer distributed |
+| v3.0+ | Dual license — GPL v3 + ArborBase Commercial | Current |
+
+### License FAQ
+
+**Is OTree free?**
+Yes — for personal, academic, non-profit and open source use under GPL v3.
+
+**Do I need a commercial license?**
+Yes if you use OTree in any for-profit organization — even for internal use only.
+
+**What does a commercial license cost?**
+- Individual Professional: $49/year
+- Team (up to 5 users): $199/year
+- Enterprise: Contact hello@arborbase.io
+
+**Can I evaluate before buying?**
+Yes — 30 day free evaluation. Contact hello@arborbase.io.
+
 ---
 
-*Built with HTML, CSS and vanilla JavaScript. No frameworks. No dependencies. No nonsense.*
-*The downloadable version is free  and open source. Always. Future hosted features will be offered as paid plans.*
-*The downloadable version is free and open source. Always. Future hosted features will be offered as paid plans.*
+## Roadmap
 
-*Feature comparison based on publicly available information as of 2025. Subject to change.*
+- [x] CSV loading with tab/comma auto-detection
+- [x] Automatic chart generation
+- [x] Effective indirect % calculation
+- [x] Time-aware as-of date filtering
+- [x] Multiple parent handling
+- [x] Minimap navigation
+- [x] Positioning presets
+- [x] Save and switch named layouts
+- [x] Snapshot export with embedded data
+- [ ] Ribbon navigation (v3.0)
+- [ ] Keyboard shortcuts (v3.0)
+- [ ] Date slider with animated timeline (v3.0)
+- [ ] Subset tree view — focus on any company as root (v3.0)
+- [ ] Style presets by country and level (v3.0)
+- [ ] AI analytics — natural language queries (v3.0)
+- [ ] Mobile optimised layout (v3.0)
+- [ ] ETree — employee org chart tool (planned)
 
+---
+
+## Disclaimer
+
+OTree is provided for informational and visualization purposes only. It does not constitute legal, financial or compliance advice. Users are solely responsible for the accuracy and completeness of the data they enter. Labsky Consulting LLC makes no warranties regarding accuracy, completeness or fitness for purpose of the tool or its output.
+
+---
+
+## Contact
+
+**ArborBase — by Labsky Consulting LLC**
+New York, NY
+[hello@arborbase.io](mailto:hello@arborbase.io)
+[github.com/Arborbase/OTree](https://github.com/Arborbase/OTree)
+
+*Feature comparison based on publicly available information as of 2026. Subject to change.*
