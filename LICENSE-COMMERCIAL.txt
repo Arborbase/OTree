@@ -1,0 +1,106 @@
+ArborBase Commercial License
+Copyright 2025 Labsky Consulting LLC
+Operating as ArborBase
+arborbase.io | hello@arborbase.io
+github.com/Arborbase/OTree
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GRANT OF LICENSE
+
+A commercial license grants you a non-exclusive,
+non-transferable right to use OTree (v3.0 and later)
+in commercial products and services subject to the
+terms below.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHO NEEDS A COMMERCIAL LICENSE
+
+You need a commercial license if you:
+- Use OTree in a law firm, accounting firm, bank,
+  compliance team, or any for-profit organization
+- Use OTree to perform paid work for clients
+- Embed OTree in software you sell or license to others
+- White-label or rebrand OTree under a different name
+- Offer OTree as part of a paid service
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHO DOES NOT NEED A COMMERCIAL LICENSE
+
+You do not need a commercial license if you:
+- Use OTree for personal, non-commercial purposes
+- Use OTree for academic or research purposes
+- Use OTree within a registered non-profit organization
+- Contribute to OTree as an open source project
+
+These uses are covered by the GPL v3 license.
+See LICENSE-GPL.txt for full terms.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PERMITTED USE (with commercial license)
+
+- Use OTree in your commercial product or service
+- Modify OTree for your internal use
+- Distribute OTree as part of your product
+- Use OTree to serve unlimited end users
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOT PERMITTED (even with commercial license)
+
+- Resell or sublicense OTree as a standalone product
+- Remove or alter copyright notices
+- Claim OTree as your own original work
+- Use OTree to build a competing ownership
+  visualization product without written agreement
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ATTRIBUTION
+
+All distributions must retain this notice:
+"Powered by OTree — arborbase.io"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRICING
+
+Individual Professional:  $49/year
+Team (up to 5 users):     $199/year
+Enterprise:               Contact hello@arborbase.io
+
+30-day money-back guarantee on all plans.
+
+Purchase at: arborbase.io/commercial
+Contact:     hello@arborbase.io
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LICENSE HISTORY
+
+v1.0 — MIT License. Permanent and irrevocable.
+       Downloaded copies retain MIT rights forever.
+
+v1.1 — MIT License. Permanent and irrevocable.
+       Downloaded copies retain MIT rights forever.
+
+v3.0 and all future versions — This dual license.
+     GPL v3 for non-commercial use.
+     ArborBase Commercial License for commercial use.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WARRANTY DISCLAIMER
+
+OTree is provided as-is without warranty of any kind,
+express or implied. Labsky Consulting LLC is not liable
+for any damages arising from use of this software.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Copyright 2025 Labsky Consulting LLC
+Operating as ArborBase — arborbase.io
+All commercial license inquiries: hello@arborbase.io
