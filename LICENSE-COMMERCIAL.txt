@@ -1,7 +1,7 @@
 ArborBase Commercial License
-Copyright 2025 Labsky Consulting LLC
+Copyright 2026 Labsky Consulting LLC
 Operating as ArborBase
-arborbase.io | hello@arborbase.io
+hello@arborbase.io
 github.com/Arborbase/OTree
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -74,7 +74,7 @@ Enterprise:               Contact hello@arborbase.io
 
 30-day money-back guarantee on all plans.
 
-Purchase at: arborbase.io/commercial
+Purchase at: hello@arborbase.io
 Contact:     hello@arborbase.io
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -101,6 +101,6 @@ for any damages arising from use of this software.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Copyright 2025 Labsky Consulting LLC
+Copyright 2026 Labsky Consulting LLC
 Operating as ArborBase — arborbase.io
 All commercial license inquiries: hello@arborbase.io
